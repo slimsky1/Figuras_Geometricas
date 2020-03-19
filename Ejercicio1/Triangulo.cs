@@ -7,21 +7,15 @@ namespace Ejercicio1
     class Triangulo
     {
         private double baseT;
-        private double altura;
 
-        public Triangulo(double baseT, double altura)
+        public Triangulo(double baseT)
         {
             this.baseT = baseT;
-            this.altura = altura;
         }
 
         public double getBaseT() { return this.baseT; }
 
         public void setBaseT(double baseT) { this.baseT = baseT; }
-
-        public double getAltura() { return this.altura; }
-
-        public void setAltura(double altura) { this.altura = altura; }
 
         public double calcularPerimetro()
         {
@@ -30,7 +24,7 @@ namespace Ejercicio1
 
         public double calcularArea()
         {
-            return (this.baseT * this.altura) / 2;
+            return (Math.Sqrt(3) / 4) * Math.Pow(this.baseT, 2);
         }
 
         public override string ToString()

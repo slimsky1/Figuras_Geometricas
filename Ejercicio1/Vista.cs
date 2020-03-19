@@ -45,10 +45,8 @@ namespace Ejercicio1
             Console.WriteLine("---------------------------------------------------------------------------------------------");
             Console.Write("Ingrese la base: ");
             double baseT = double.Parse(Console.ReadLine());
-            Console.Write("Ingrese la altura: ");
-            double altura = double.Parse(Console.ReadLine());
 
-            Triangulo triangulo1 = new Triangulo(baseT, altura);
+            Triangulo triangulo1 = new Triangulo(baseT);
             Console.Write(triangulo1);
             Console.ReadLine();
             Console.Clear();
